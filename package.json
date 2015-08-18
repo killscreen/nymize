@@ -1,0 +1,29 @@
+{
+  "name": "nymize",
+  "version": "0.0.1",
+  "description": "A library for shared named instances.",
+  "main": "nymize.js",
+  "scripts": {
+    "cover": "istanbul cover jasmine-node spec",
+    "docs": "jsdoc2md architecture.js > README.md",
+    "test": "jasmine-node spec"
+  },
+  "keywords": [
+    "scope"
+  ],
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/killscreen/nymize.git"
+  },
+  "bugs": {
+    "url": "https://github.com/killscreen/nymize/issues"
+  },
+  "devDependencies": {
+    "istanbul": "^0.3.14",
+    "jasmine-core": "^2.3.4",
+    "jasmine-node": "^1.14.5",
+    "jsdoc-to-markdown": "^1.0.0"
+  },
+  "author": "Victor Woeltjen",
+  "license": "MIT"
+}
