@@ -18,10 +18,11 @@
    * * If no name is provided, a new "anonymous" instance will be provided.
    *   The same instance will never be returned again.
    *
-   * @param {Function} factory a factory to returne instances.
+   * @module nymize
+   * @param {Function} factory a factory to return instances.
    * @returns {Function} an instantiation function.
    */
-  function nymize(factory) {
+  module.exports = function nymize(factory) {
     var instances = {};
     
     return function (name) {
@@ -31,7 +32,5 @@
         return factory();
       }
     };
-  }
-  
-  module.exports = nymize;
+  };
 }());

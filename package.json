@@ -5,7 +5,7 @@
   "main": "nymize.js",
   "scripts": {
     "cover": "istanbul cover jasmine-node spec",
-    "docs": "jsdoc2md architecture.js > README.md",
+    "docs": "jsdoc2md nymize.js > README.md",
     "test": "jasmine-node spec"
   },
   "keywords": [
